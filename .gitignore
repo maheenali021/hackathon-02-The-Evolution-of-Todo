@@ -1,0 +1,20 @@
+  # UV-specific
+  *.uv.lock
+  uv.lock
+
+  # Python
+  __pycache__/
+  *.pyc
+  *.pyo
+  *.pyd
+  .Python
+  *.so
+
+
+
+
+  # Testing
+  .pytest_cache/
+  .coverage
+  htmlcov/
+  .cov/
