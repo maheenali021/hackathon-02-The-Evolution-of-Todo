@@ -1,0 +1,10 @@
+[project]
+name = "hackathon-02-the-evolution-of-todo"
+version = "0.1.0"
+description = "Console-based todo list manager for Hackathon II: Spec-Driven Development"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+todo-app = "src.todo_app:main"
