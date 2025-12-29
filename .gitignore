@@ -1,20 +1,73 @@
-  # UV-specific
-  *.uv.lock
-  uv.lock
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
 
-  # Python
-  __pycache__/
-  *.pyc
-  *.pyo
-  *.pyd
-  .Python
-  *.so
+# UV-specific
+uv.lock
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
 
+# Distribution artifacts
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.installed.cfg
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+lib/
+lib64/
 
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 
-  # Testing
-  .pytest_cache/
-  .coverage
-  htmlcov/
-  .cov/
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Local configuration
+.local/
+.config/
+
+# Editor and IDE files
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+
+# Python linters and formatters
+.htmlcov/
+.coverage*
+.coverage
+.pytest_cache/
+.nox/
+.pytype/
+.mypy_cache/
+.hypothesis/
