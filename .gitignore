@@ -1,8 +1,34 @@
-# Virtual environments
-.venv/
-venv/
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
 env/
+venv/
+.venv/
 ENV/
+.venv/
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.test.local
+.env.development.local
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+out/
+coverage/
+.nyc_output/
+lib/
+es/
+esm/
+umd/
 
 # UV-specific
 uv.lock
@@ -14,12 +40,8 @@ __pycache__/
 *.pyd
 .Python
 *.so
-
-# Distribution artifacts
 *.egg
 *.egg-info/
-dist/
-build/
 develop-eggs/
 .installed.cfg
 .eggs/
@@ -31,25 +53,80 @@ wheels/
 .installed.cfg
 lib/
 lib64/
+.htmlcov/
+.coverage*
+.coverage
+.pytest_cache/
+.nox/
+.pytype/
+.mypy_cache/
+.hypothesis/
 
-# IDEs
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.fseventsd
+
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
+*~
+.vs/
+.settings/
 
 # Environment variables
-.env
-.env.local
-.env.production
-.env.development
+.env*
+
+# Next.js
+.next/
+out/
+.cache/
+.svelte-kit/
+.craft/
+.next-server/
+.next-server/static/
+
+# Database
+*.db
+*.db-journal
+
+# Secrets
+secrets/
+*.key
+*.pem
+*.crt
+*.cert
+
+# Docker
+.dockerignore
+.docker/
+!docker-compose.yml
+
+# Coverage
+coverage/
+.coverage*
+*.lcov
+.nyc_output/
+
+# Testing
+.jest/
+jest-coverage/
+.test-results/
 
 # Local configuration
 .local/
@@ -59,15 +136,3 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.code-workspace
-*.swp
-*.swo
-
-# Python linters and formatters
-.htmlcov/
-.coverage*
-.coverage
-.pytest_cache/
-.nox/
-.pytype/
-.mypy_cache/
-.hypothesis/

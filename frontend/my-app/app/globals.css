@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #2F3441; /* deep blue-gray */
+  --foreground: #FFFFFF; /* pure white */
+  --secondary-bg: #3A3F4E; /* muted slate */
+  --card-bg: #3C4252; /* slightly lighter slate */
+  --elevated-card: #434A5D; /* elevated/active cards */
+  --text-primary: #FFFFFF; /* pure white */
+  --text-secondary: #C7CBD6; /* soft gray */
+  --text-muted: #9AA0B3; /* cool gray */
+  --accent-primary: #FF6B5C; /* coral orange */
+  --accent-info: #5DA9FF; /* soft blue */
+  --accent-success: #4CD7A5; /* mint green */
+  --accent-purple: #8B7CF6; /* soft purple */
+  --accent-warning: #F5C76A; /* amber yellow */
+  --accent-error: #FF5C5C; /* soft red */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondary-bg: var(--secondary-bg);
+  --color-card-bg: var(--card-bg);
+  --color-elevated-card: var(--elevated-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-info: var(--accent-info);
+  --color-accent-success: var(--accent-success);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-warning: var(--accent-warning);
+  --color-accent-error: var(--accent-error);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2F3441; /* deep blue-gray */
+    --foreground: #FFFFFF; /* pure white */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', 'SF Pro', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}

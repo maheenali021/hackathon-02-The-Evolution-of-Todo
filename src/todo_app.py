@@ -10,7 +10,7 @@ class Task:
             raise ValueError("Title cannot be empty")
         self.id = task_id
         self.title = title.strip()
-        self.description = description.strip() if description else None
+        self.description = description.strip() if description and description.strip() else None
         self.completed = False
 
     def __str__(self) -> str:
